@@ -1,0 +1,9 @@
+C:\projects\FOPS\ngUi\bin\ngUi.dll.config
+C:\projects\FOPS\ngUi\bin\ngUi.dll
+C:\projects\FOPS\ngUi\bin\ngUi.pdb
+C:\projects\FOPS\ngUi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\projects\FOPS\ngUi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\projects\FOPS\ngUi\obj\Debug\ngUi.csprojResolveAssemblyReference.cache
+C:\projects\FOPS\ngUi\obj\Debug\ngUi.csproj.CoreCompileInputs.cache
+C:\projects\FOPS\ngUi\obj\Debug\ngUi.dll
+C:\projects\FOPS\ngUi\obj\Debug\ngUi.pdb

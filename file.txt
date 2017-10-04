@@ -1,0 +1,200 @@
+    1  ls -la
+    2  pwd
+    3  cd ..
+    4  ls -la
+    5  cd Chris.Schweigart/
+    6  ls -la
+    7  cd ..
+    8  cd ..
+    9  cd projects/
+   10  ls -la
+   11  cd FOPS/
+   12  ls -la
+   13  cd ngUi/
+   14  ls -la
+   15  ng -v
+   16  exit
+   17  cd .
+   18  cd ..
+   19  ls -la
+   20  cd Chris.Schweigart/
+   21  ls -la
+   22  cd C:
+   23  cd projects/FOPS/
+   24  l -la
+   25  ls -la
+   26  cd
+   27  ls -la
+   28  cd ..
+   29  cd Chris.Schweigart/
+   30  cd git-repos/
+   31  cd travel-site/
+   32  ls -la
+   33  vi package.json 
+   34  exit
+   35  cd git
+   36  ls -la
+   37  cd pwd
+   38  ls -la
+   39  pwd
+   40  ls -la
+   41  cd ..
+   42  ls -la
+   43  cd Chris.Schweigart/
+   44  ls -la
+   45  cd git-repos/
+   46  ls -la
+   47  cd travel-site/
+   48  ls-la
+   49  ls -la
+   50  vi package.json 
+   51  ls -la
+   52  cd ..]
+   53  ls -la
+   54  ls -la
+   55  cd ..
+   56  ls -la
+   57  cd c
+   58  cd C:
+   59  cd projects/FOPS/
+   60  ls -la
+   61  ls -la
+   62  cd ngUI
+   63  ls -la
+   64  gulp -v
+   65  ls -la
+   66  history
+   67  npm i --save-dev gulp
+   68  npm i --save-dev gulp-rename
+   69  npm i --save-dev gulp-svg-sprite
+   70  npm i --save-dev 
+   71  clear
+   72  ls -la
+   73  vi package.json 
+   74  vi package.json
+   75  exit
+   76  cd C:/projects/FOPS
+   77  cd ng
+   78  cd ngUi/
+   79  ng serve 4500
+   80  ng serve --port 4500
+   81  ls -la
+   82  npm start --port 4500
+   83  exit
+   84  pwd
+   85  cd ..
+   86  ls -la
+   87  cd Chris.Schweigart/
+   88  ls -la
+   89  cd git-repos/
+   90  ls -la
+   91  cd ng2-admin/
+   92  ls -la
+   93  npm start
+   94  ls- la
+   95  cd ..
+   96  ls -la
+   97  cd user-reg
+   98  ls -la
+   99  cd ..
+  100  cd user-registration-app/
+  101  ls -la
+  102  cd ..
+  103  rm -rf user-registration-app
+  104  ls -la
+  105  cd angular-registration-login-example/
+  106  ls -la
+  107  npm start
+  108  cd ..
+  109  ls -la
+  110  cd ..
+  111  ls -la
+  112  cd C:/Oracle
+  113  ls -la
+  114  cd product/
+  115  ls -la
+  116  cd 12.1.0
+  117  ls -la
+  118  cd client_1/
+  119  ls -l
+  120  acd ..
+  121  cd ..
+  122  ls -la
+  123  cd ..
+  124  ls -la
+  125  cd ..
+  126  cd ..
+  127  cd
+  128  ls la
+  129  ls lka
+  130  ls -la
+  131  pwd
+  132  history
+  133  cd C:/projects/FOPS
+  134  ls -la
+  135  npm start
+  136  ng serve
+  137  ls -la
+  138  cd ngUi/
+  139  ls -la
+  140  npm start
+  141  ng serve
+  142  netstat 4200
+  143  cd 
+  144  cd C:/
+  145  ls -la
+  146  cd pro
+  147  cd projects/
+  148  ls -la
+  149  cd ..
+  150  ls -la
+  151  cd Users/
+  152  cd Chris.Schweigart/
+  153  ls -la
+  154  cd git-repos/
+  155  ls -la
+  156  cd ng2-admin/
+  157  ls -la
+  158  npm start
+  159  npm start --port 4201
+  160  npm stop
+  161  exit
+  162  ls -la
+  163  ls -la
+  164  pwd
+  165  cd c
+  166  ls -la
+  167  cd C:
+  168  cd Users/Chris.Schweigart/
+  169  cd git-repos/
+  170  cd ng2-admin/
+  171  ls -la
+  172  netstat 4200
+  173  history | grep 'netstat'
+  174  netstat -aon | findstr 4200
+  175  netstat -i TCP:4200
+  176  netstat -aon | findstr 4200
+  177  taskkill /F /PID 44664
+  178  taskkill /f /PID 44664
+  179  taskkill //F //PID 44664
+  180  netstat -aon | findstr 4200
+  181  ls -la
+  182  cd ..
+  183  cd C:
+  184  ls -la
+  185  cd projects/
+  186  ls -la
+  187  cd FOPD
+  188  cd FOPS
+  189  ls -la
+  190  cd ngUi/
+  191  ls -la
+  192  npm start 9999
+  193  npm start --por t9999
+  194  npm start --port 9999
+  195  netstat -aon | findstr 4200
+  196  taskkill //F //PID 43060
+  197  npm start --port 9999
+  198  netstat -aon | findstr 4200
+  199  taskkill //F //PID 11400
+  200  history >> file.txt
