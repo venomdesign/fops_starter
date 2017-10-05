@@ -16,6 +16,7 @@ import { GlobalService } from './services/global.service';
 import { ScopeGuardService } from './services/scope-guard.service';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
+import { HistoryComponent } from './history/history.component';
 import { CallbackComponent } from './callback/callback.component';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { CallbackComponent } from './callback/callback.component';
         AppComponent,
         ProfileComponent,
         HomeComponent,
+        HistoryComponent,
         CallbackComponent,
     ],
     imports: [
