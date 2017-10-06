@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@mixin noselect(){
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500');
+@import "~normalize.css";
+@import "scss/theme";
+
+
+
+body{
+  background: url("./assets/images/back.svg"), $warm;
+  padding-bottom: $default-spacing * 2;
+}
+
+.app-loader{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  img{
+    width: 100px;
+    height: 100px;
+  }
+
+}
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+image:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
