@@ -14,19 +14,27 @@ import { AuthGuardService } from './services/auth-guard.service';
 import { AuthService } from './services/auth.service';
 import { GlobalService } from './services/global.service';
 import { ScopeGuardService } from './services/scope-guard.service';
-import { ProfileComponent } from './profile/profile.component';
-import { HomeComponent } from './home/home.component';
-import { HistoryComponent } from './history/history.component';
 import { CallbackComponent } from './callback/callback.component';
-import { InvoicesComponent } from './invoices/invoices.component';
-import { WalletComponent } from './wallet/wallet.component';
-import { PaymentComponent } from './payment/payment.component';
+
 import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { PasswordComponent } from './login/password/password.component';
-import { AddAccountComponent } from './wallet/add-account/add-account.component';
-import { SuccessComponent } from './wallet/success/success.component';
-import { FailComponent } from './wallet/fail/fail.component';
+
+import { HomeComponent } from './home/home.component';
+
+import { InvoicesComponent } from './invoices/invoices.component';
+    import { ProfileComponent } from './profile/profile.component';
+    import { HistoryComponent } from './history/history.component';
+    import { WalletComponent } from './wallet/wallet.component';
+        import { AddAccountComponent } from './wallet/add-account/add-account.component';
+        import { SuccessComponent } from './wallet/success/success.component';
+        import { FailComponent } from './wallet/fail/fail.component';
+
+    import { PaymentComponent } from './payment/payment.component';
+        import { PaySuccessComponent } from './payment/pay-success/pay-success.component';
+        import { PayFailComponent } from './payment/pay-fail/pay-fail.component';
+
+
 
 @NgModule({
     declarations: [
@@ -44,6 +52,8 @@ import { FailComponent } from './wallet/fail/fail.component';
         AddAccountComponent,
         SuccessComponent,
         FailComponent,
+        PaySuccessComponent,
+        PayFailComponent        
     ],
     imports: [
         BrowserModule,
