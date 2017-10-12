@@ -1,10 +1,10 @@
-import 'rxjs/add/operator/filter';
-
 import * as auth0 from 'auth0-js';
 
 import { AUTH_CONFIG } from './auth0-variables';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import 'rxjs/add/operator/filter';
+
 
 @Injectable()
 export class AuthService {
@@ -32,10 +32,12 @@ export class AuthService {
                 window.location.hash = '';
                 this.setSession(authResult);
                 this.router.navigate(['/']);
+                console.log('success: ' + authResult);
             } else if (err) {
                 console.log(err);
                 this.router.navigate(['/']);
-                // alert(`Error: ${err.error}. Check the console for further details.`);
+                // alert('Error: ${err.error}. Check the console for further details.');
+                console.log('Error: ${err.error}. Check the console for further details.');
             }
         });
     }

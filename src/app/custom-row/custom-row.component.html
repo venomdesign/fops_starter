@@ -1,0 +1,64 @@
+<div class="row">
+<div class="col-sm-12">
+  <div class="row">
+    <div class="col-12 text-sm-right">
+      <i class="fa fa-close fa-lg" (click)="$hide()" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-3">
+      <label class="control-label">Order #</label>
+      <div class="form-control-static">{{row.order_number}}</div>
+    </div>
+    <div class="form-group col-sm-3">
+      <label class="control-label">Property Address</label>
+      <div class="form-control-static">{{row.property_address}}</div>
+    </div>
+    <div class="form-group col-sm-3">
+      <label class="control-label">Invoice Date</label>
+      <div class="form-control-static">{{row.invoice_date}}</div>
+    </div>
+    <div class="form-group col-sm-3">
+      <label class="control-label">Charge Amount</label>
+      <div class="form-control-static">{{row.charge_amount}}</div>
+    </div>    
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-3">
+      <label class="control-label">Invoice #</label>
+      <div class="form-control-static">{{row.invoice_reference_number}}</div>
+    </div>
+    <div class="form-group col-sm-3">
+      <label class="control-label">Bill to Company</label>
+      <div class="form-control-static">{{row.name}}</div>
+    </div>
+    <div class="form-group col-sm-3">
+      <label class="control-label">Invoice Company Name</label>
+      <div class="form-control-static">{{row.company}}</div>
+    </div>
+    <div class="form-group col-sm-3">
+      <label class="control-label">Amount</label>
+      <div class="form-control-static">{{row.amount}}</div>
+    </div>    
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-3">
+      <label class="control-label">Customer Ref. #</label>
+      <div class="form-control-static">{{row.customer_reference_number}}</div>
+    </div>
+    <div class="form-group col-sm-3">
+      <label class="control-label">Bill to Attn</label>
+      <div class="form-control-static">{{row.full_name}}</div>
+    </div>
+    <div class="form-group col-sm-3">
+      <label class="control-label">Invoice Balance</label>
+      <div class="form-control-static">{{row.balance}}</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-3">
+      <label class="control-label">Order Customer Ref. #</label>
+      <div class="form-control-static">{{row.first_name}}</div>
+    </div>
+  </div>
+</div>

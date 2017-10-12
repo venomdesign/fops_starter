@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
   <div *ngIf="auth.isAuthenticated()" class="user-profile" style="float: right;">
     <div class="monogram">XX</div>
     <div class="user-menu">
@@ -21,37 +21,149 @@
     <div class="corporate-mark"><a routerLink="/" class="pointer">FNF Online Payment System</a></div>
   </div>
   <ng2-slim-loading-bar [height]="'2px'" [color]="'lime'" class="clearfix"></ng2-slim-loading-bar>
-</header>
-<div id="mainContainer" class="main-container">
-  <div *ngIf="auth.isAuthenticated()" id="menuContainer" class="menu-container">
-    <div id="fullSideMenu" class="full-side-menu" style="display: none;">
-      <ul class="full-menu">
-        <li routerLinkActive='active'><a routerLink='home'><i class="fa fa-home fa-2x fa-inverse fa-fw" aria-hidden="true"></i>&nbsp;Home</a></li>
-        <li routerLinkActive='active'><a (click)="auth.login()"><i class="fa fa-home fa-2x fa-inverse fa-fw" aria-hidden="true"></i>&nbsp;Login</a></li>
-        <li routerLinkActive='active'><a routerLink='registration'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Registration</a></li>
-        <li routerLinkActive='active'><a routerLink='invoices'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Invoices</a></li>
-          <li routerLinkActive='active'><a routerLink='profile'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Profile</a></li>
-          <li routerLinkActive='active'><a routerLink='history'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;History</a></li>
-          <li routerLinkActive='active'><a routerLink='wallet'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Wallet</a></li>
+</header> -->
+<!-- <div id="mainContainer" class="main-container"> -->
 
-            <li routerLinkActive='active'><a routerLink='add-account'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Add Card</a></li>
-          <li routerLinkActive='active'><a routerLink='payment'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Payment</a></li>
-            <li routerLinkActive='active'><a routerLink='pay-success'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Success/Fail</a></li>
-            <li routerLinkActive='active'><a routerLink='pay-fail'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Success/Fail</a></li>
-      </ul>
-    </div>
-    <div id="iconSideMenu" class="icon-side-menu">
-      <ul class="iconMenu">
-        <li id="homeIcon" routerLinkActive='active'><a routerLink='home'><i class="fa fa-home fa-2x fa-inverse fa-fw" aria-hidden="true"></i></a></li>
-        <li id="profileIcon" routerLinkActive='active'><a routerLink='profile'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i></a></li>
-      </ul>
-    </div>
-    <div class="pz-logo">
-      <img src="assets/fnf_logo_trans.fw.png" alt="Fidelity National Financial" style="max-width: 45px;" /><br />&copy; 2017
-      <script>new Date().getFullYear()>2017&&document.write("-"+new Date().getFullYear());</script>
-    </div>
+
+        <div class="menu-hover">
+            <div class="btn-menu">
+                <span></span>
+            </div><!-- //mobile menu button -->
+        </div>
+
+        <div class="header-inner-pages">
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav class="navbar menu-top">
+                                <ul class="menu" *ngIf="auth.isAuthenticated()">
+                                    <li class="home" routerLinkActive='active'><a routerLink="/" class="pointer"><!-- <i class="fa fa-home fa-2x fa-inverse fa-fw" aria-hidden="true"></i>&nbsp; -->Home <span class="menu-description">TEXT</span></a></li>
+                                    <li>
+                                        <a class="pointer" routerLink='login' *ngIf="!auth.isAuthenticated()">Login</a>
+                                        <!-- <ul class="submenu">
+                                            <li><a href="#">Text</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li><a class="pointer" routerLink='profile'>Profile</a>
+                                        <!-- <ul class="submenu">
+                                            <li><a href="#">Text</a></li>
+                                        </ul> -->
+                                    </li>                                                          
+                                    <li>
+                                      <a class="pointer" (click)="auth.logout()">Logout</a>
+                                        <!-- <ul class="submenu">
+                                            <li><a href="#">Text</a></li>
+                                            <li><a href="#">Text</a></li>
+                                        </ul> -->
+                                    </li>
+                                </ul><!-- /.menu -->
+                            </nav><!-- /.mainnav -->
+
+                            <a *ngIf="auth.isAuthenticated()" class="navbar-right search-toggle show-search" href="#">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            
+                            <div *ngIf="auth.isAuthenticated()" class="submenu top-search">
+                                <form class="search-form">
+                                    <div class="input-group">
+                                        <input type="search" class="search-field" placeholder="Search Here">
+                                        <span class="input-group-btn">
+                                            <button type="submit"><i class="fa fa-search fa-4x"></i></button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div><!-- col-md-12 -->
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- Top -->    
+        </div><!-- header-inner-pages -->
+        <header id="header" class="header" *ngIf="auth.isAuthenticated()">
+            <div class="header-wrap">
+                <div class="container">
+                    <div class="header-wrap clearfix">
+                        <div id="logo" class="logo">
+                            <a href="/" rel="home"></a>
+                        </div><!-- /.logo -->
+                        <div class="nav-wrap">
+                            <nav id="mainnav" class="mainnav">
+                                <ul class="menu"> 
+                                    <li routerLinkActive='active'><a routerLink='registration'><!-- <i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp; -->Registration <span class="menu-description">FOPS Dev</span></a></li>
+                                    <li routerLinkActive='active'><a routerLink='invoices'><!-- <i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp; -->Invoices <span class="menu-description">FOPS Dev</span></a></li>
+                                    <!-- <li routerLinkActive='active'><a routerLink='profile'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Profile <span class="menu-description">FOPS Dev</span></a></li> -->
+                                    <li routerLinkActive='active'><a routerLink='history'><!-- <i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp; -->History <span class="menu-description">FOPS Dev</span></a></li>
+                                    <li routerLinkActive='active'><a routerLink='wallet'><!-- <i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp; -->Wallet <span class="menu-description">BOA IFrame?</span></a></li>
+                                    <li routerLinkActive='active'><a routerLink='add-account'><!-- <i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp; -->Add Card <span class="menu-description">BOA IFrame?</span></a></li>
+                                    <li routerLinkActive='active'><a routerLink='payment'><!-- <i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp; -->Payment <span class="menu-description">BOA IFrame?</span></a></li>
+                                    <li routerLinkActive='active'><a routerLink='pay-success'><!-- <i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp; -->Success/Fail <span class="menu-description">BOA IFrame? Success</span></a></li>
+                                    <li routerLinkActive='active'><a routerLink='pay-fail'><!-- <i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp; -->Success/Fail <span class="menu-description">BOA IFrame? Fail</span></a></li>
+                                </ul><!-- /.menu -->
+                            </nav><!-- /.mainnav -->
+                        </div><!-- /.nav-wrap -->
+                    </div><!-- /.header-wrap -->
+                </div><!-- /.container-->
+            </div><!-- /.header-wrap-->
+        </header><!-- /.header -->
+        <ng2-slim-loading-bar [height]="'2px'" [color]="'lime'" class="clearfix"></ng2-slim-loading-bar>
+
+        <section class="flat-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" style="height: 750px;">
+                        <div *ngIf="auth.isAuthenticated(); else infoText" style="margin-top: 10px;">
+            <router-outlet></router-outlet>
+          </div>
+          <ng-template #infoText>
+            <div>
+              <h3>Please login...</h3>
+              <button class="btn btn-primary" (click)="auth.login()">Login</button>
+            </div>
+          </ng-template>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+ 
+
+
+
+
+
+<!--   <div *ngIf="auth.isAuthenticated()" id="menuContainer" class="menu-container">
+  <div id="fullSideMenu" class="full-side-menu" style="display: none;">
+    <ul class="full-menu">
+      <li routerLinkActive='active'><a><i class="fa fa-home fa-2x fa-inverse fa-fw" aria-hidden="true"></i>&nbsp;Home</a></li>
+      <li routerLinkActive='active'><a (click)="auth.login()"><i class="fa fa-home fa-2x fa-inverse fa-fw" aria-hidden="true"></i>&nbsp;Login</a></li>
+      <li routerLinkActive='active'><a routerLink='registration'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Registration</a></li>
+      <li routerLinkActive='active'><a routerLink='invoices'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Invoices</a></li>
+        <li routerLinkActive='active'><a routerLink='profile'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Profile</a></li>
+        <li routerLinkActive='active'><a routerLink='history'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;History</a></li>
+        <li routerLinkActive='active'><a routerLink='wallet'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Wallet</a></li>
+
+          <li routerLinkActive='active'><a routerLink='add-account'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Add Card</a></li>
+        <li routerLinkActive='active'><a routerLink='payment'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Payment</a></li>
+          <li routerLinkActive='active'><a routerLink='pay-success'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Success/Fail</a></li>
+          <li routerLinkActive='active'><a routerLink='pay-fail'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i>&nbsp;Success/Fail</a></li>
+    </ul>
   </div>
-  <div id="contentContainer" class="content-wrapper fullHeight">
+  <div id="iconSideMenu" class="icon-side-menu">
+    <ul class="iconMenu">
+      <li id="homeIcon" routerLinkActive='active'><a routerLink='home'><i class="fa fa-home fa-2x fa-inverse fa-fw" aria-hidden="true"></i></a></li>
+      <li id="profileIcon" routerLinkActive='active'><a routerLink='profile'><i class="fa fa-user-o fa-2x fa-inverse fa-fw"></i></a></li>
+    </ul>
+  </div>
+  <div class="pz-logo">
+    <img src="assets/fnf_logo_trans.fw.png" alt="Fidelity National Financial" style="max-width: 45px;" /><br />&copy; 2017
+    <script>new Date().getFullYear()>2017&&document.write("-"+new Date().getFullYear());</script>
+  </div>
+</div> -->
+
+
+
+
+  <!-- <div id="contentContainer" class="content-wrapper fullHeight">
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12">
@@ -67,5 +179,5 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
+  </div> -->
+<!-- </div> -->
